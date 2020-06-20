@@ -1,0 +1,122 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/core-modules": ["styled-jsx/css"]
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "radix": ["error", "as-needed"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "afterColon": true
+      }
+    ],
+    "jsx-quotes": ["error", "prefer-double"],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": true,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true
+      }
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": "off",
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": [
+      0,
+      {
+        "ignoreClassFields": true
+      }
+    ],
+    "react/jsx-first-prop-new-line": "off",
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "maximum": 1
+      }
+    ],
+    "no-console": "off",
+    "react/prop-types": 0,
+    "max-len": [
+      "error",
+      {
+        "code": 500
+      }
+    ],
+    "comma-dangle": ["error", "never"],
+    "import/no-unresolved": [2, {"caseSensitive": false}],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ]
+  }
+}
