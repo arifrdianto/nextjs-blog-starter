@@ -1,0 +1,9 @@
+{
+  "name": "Nextjs Starter with PWA",
+  "short_name": "Learn NextJS",
+  "theme_color": "#0064d2",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}

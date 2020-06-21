@@ -13,9 +13,15 @@ function Layout({ children, home }) {
         <link rel="icon"
           href="/favicon.ico"
         />
-        <meta name="description"
-          content="Learn Next.js"
-        />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <meta name="theme-color" content="#0064d2"/>
+        <meta charset='utf-8' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+        <meta name='description' content='Nextjs Starter with PWA' />
+        <meta name='keywords' content='nextjs' />
+        
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
